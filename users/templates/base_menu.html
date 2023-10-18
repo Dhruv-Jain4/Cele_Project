@@ -1,0 +1,29 @@
+{% extends "base_bootstrap.html" %}
+{% block navbar %}
+<style>
+
+</style>
+<nav class="navbar navbar-default navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="{% url 'home:home' %}">Home</a>
+    </div>
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{% url 'home:list_projects' %}">Your Projects</a>
+  </div>
+    <ul class="nav navbar-nav navbar-right">
+      <!-- <li><a href=""><span class="dropbtn glyphicon glyphicon-user">{{ user.get_username }}</span> </a></li> -->
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ user.get_username }} <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="{% url 'platform_users:logout' %}">Logout</a>
+          </li>
+          
+        </ul>
+      </li>
+    </ul>
+    <!-- https://stackoverflow.com/questions/22047251/django-dynamically-get-view-url-and-check-if-its-the-current-page -->
+    
+  </div>
+</nav>
+{% endblock %}

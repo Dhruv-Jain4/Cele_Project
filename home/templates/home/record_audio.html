@@ -1,0 +1,139 @@
+{% extends 'base_menu.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<style>
+
+.new_button {
+    width: 21%;
+    background-color: #2b362b;
+    color: white;
+    padding: 13px 2px;
+    margin-left: 25%;
+    margin-bottom: 0%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    /* display: block; */
+    font-size: 20px;
+  }
+  .new_button:hover {background-color: black}
+  
+  .new_button:disabled {
+    opacity:.7;
+    background-color: gray;
+  }
+
+  .new_button:active {
+    background-color: gray; 
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+</style>
+<button class="new_button" id="startRecord">Start Recording</button>
+
+    <button class="new_button" style="position: relative; margin-left: 40px; " id="stopRecord" disabled>Stop Recording</button>
+    <br>
+    <br>
+    <audio controls id="audioElement" style="display: none; margin-left: 37%;"></audio>
+    <br>
+    <br>
+    <button class="new_button" style="margin-left: 37%; display: none;" id="sendToServer" disabled>Send to Server</button>
+    <button class="new_button" style="margin-left: 34%; margin-top: 10%; position: fixed; "  onclick="location.href='{% url 'home:project_detail' pk=proj.id %}'">Go Back to Project Detail</button>
+    <script>
+        const startButton = document.getElementById('startRecord');
+        const stopButton = document.getElementById('stopRecord');
+        const sendToServerButton = document.getElementById('sendToServer');
+        const audioElement = document.getElementById('audioElement');
+        let mediaRecorder;
+        let audioChunks = null;
+
+        startButton.addEventListener('click', () => {
+            audioChunks = []; // Reset audioChunks when starting a new recording
+
+            navigator.mediaDevices.getUserMedia({ audio: true })
+                .then(stream => {
+                    mediaRecorder = new MediaRecorder(stream);
+                    mediaRecorder.ondataavailable = event => {
+                        if (event.data.size > 0) {
+                            audioChunks.push(event.data);
+                        }
+                    };
+                    mediaRecorder.onstop = () => {
+                        
+                        const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                        audioElement.src = URL.createObjectURL(audioBlob);
+                        audioElement.style.display = 'block';
+                        const formData = new FormData();
+                        formData.append('audio', audioBlob, 'audio.wav');
+                        // const audioFile = new File([audioBlob], 'audio.wav');
+                        // const formData = new FormData();
+                        // formData.append('audio', audioFile);
+                        // audioInput.files = formData;
+                        sendToServerButton.style.display = "block";
+                        audioForm.style.display = 'block';
+                        document.getElementById("audioInput").value = audioElement.src
+                        
+                    };
+                    const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                    audioElement.src = URL.createObjectURL(audioBlob);
+                    audioElement.style.display = 'block';
+                    mediaRecorder.start();
+                    startButton.disabled = true;
+                    stopButton.disabled = false;
+                    sendToServerButton.disabled = true; // Disable the "Send to Server" button until recording is complete
+                })
+                .catch(error => {
+                    console.error('Error accessing microphone:', error);
+                });
+        });
+
+        stopButton.addEventListener('click', () => {
+            mediaRecorder.stop();
+            startButton.disabled = false;
+            stopButton.disabled = true;
+            sendToServerButton.disabled = false; // Enable the "Send to Server" button when recording is complete
+        });
+
+        sendToServerButton.addEventListener('click', () => {
+            if (audioChunks && audioChunks.length > 0) {
+                const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                sendAudioToServer(audioBlob);
+            } else {
+                console.error('No audio to send.');
+            }
+        });
+
+        function sendAudioToServer(audioBlob) {
+            
+            const formData = new FormData();
+
+            formData.append('project_id', {{ proj.id }} )
+            formData.append('file', audioBlob, 'new_audio.wav');
+            
+
+            fetch("{% url 'home:record_audio' pk=proj.id %}", {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Server response:', data);
+                if (data["message"] == "success"){
+                    alert("Audio Uploaded Successfully")
+                    audioElement.src = ""
+                    sendToServerButton.disabled = true
+
+                }
+                else
+                {
+                    alert("Audio Uploading Failed")
+                }
+            }
+                )
+            .catch(error => {
+                console.error('Error sending audio to server:', error);
+            });
+        }
+    </script>
+{% endblock %}

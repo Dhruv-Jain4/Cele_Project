@@ -1,0 +1,5 @@
+<h1>Training Job Start</h1><h2>Reading files ...<strong>Completed</strong>
+Preprocessing Data ...<strong>Completed</strong>
+Creating Training Data ...<strong>Completed</strong>
+Saving Data ...<strong>Completed</strong>
+</h2><h2 style="font-weight: bolder">Training Logs : </h2><div><table style="background-color: white; width: 500px"" class="table"><tr><th background-color: lightskyblue;>Epoch</th><th background-color: lightskyblue;>Accuracy</th><th background-color: lightskyblue;`>Loss</th></tr><tr><td>0</td><td>0.41465455293655396</td><td>0.2928510308265686</td></tr><tr><td>1</td><td>0.5445091128349304</td><td>0.2803555428981781</td></tr><tr><td>2</td><td>0.4106254577636719</td><td>0.2690102458000183</td></tr><tr><td>3</td><td>0.49912726879119873</td><td>0.2529711425304413</td></tr></table></table></div><h1>Training Job Finished</h1>

@@ -1,0 +1,33 @@
+{% extends "base_menu.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+
+<br>
+<table class="table" style="background-color: white; width: 50%;">
+    <th style="background-color: lightskyblue;"><h3>Your Wakeword projects</h3> </th>
+    <th style="background-color: rgb(135, 206, 250)"></th>
+    <tr>
+        <th>Sno.</th>
+        <th>Name</th>
+        
+      </tr>
+{% if objects %}
+
+    {% for object in objects %}
+      <tr>
+        <td>{{ object.id }}</td>
+        <td><a href="{% url 'home:project_detail' pk=object.id %}" style="font-size: larger; font-weight: bold;">{{ object.name }}</a></td>
+        
+    </tr>
+    {% endfor %}
+
+    
+{% endif %}
+</table>
+<br>
+<br>
+<strong><a href="{% url 'home:create_project' %}" style="color: yellow; font-size: x-large; font-weight: bolder;" >Create New project</a></strong>
+
+{% endblock %}

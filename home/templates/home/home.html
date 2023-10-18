@@ -1,0 +1,108 @@
+{% extends "base_menu.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #35495e;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+#how-it-works {
+    text-align: center;
+    padding: 40px;
+}
+
+.step {
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 24px;
+    color: #35495e;
+}
+
+#get-started {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px;
+}
+
+cta-button {
+    display: inline-block;
+    background-color: #35495e;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+cta-button:hover {
+    background-color: #293c4e;
+}
+
+footer {
+    background-color: #35495e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+    <header>
+        <h1>Welcome to Trigger Word Detection Model Generator</h1>
+        <p>Your path to accurate Trigger Word detection starts here!</p>
+    </header>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="step">
+            <h3>1. Create a New Project</h3>
+            <p>Start by creating a new project to generate your Trigger Work detection model.</p>
+        </div>
+        <div class="step">
+            <h3>2. Add Annotated Data</h3>
+            <p>Add diverse audio files with Trigger Word utterances by people of various accents, genders, and pitches to enhance model performance.</p>
+        </div>
+        <div class="step">
+            <h3>3. Train Your Model</h3>
+            <p>Initiate a training job, specifying epochs, and monitor the live training logs in the form of tables and graphs.</p>
+        </div>
+        <div class="step">
+            <h3>4. Download Your Model</h3>
+            <p>Once the training is complete, download your model in .h5 format for Trigger Word detection predictions.</p>
+        </div>
+    </section>
+
+    <section id="get-started">
+        <h2>Get Started Today</h2>
+        <p>Creating a custom Trigger Word detection model has never been easier. <strong><a href="{% url 'home:create_project' %}" style="color: yellow; font-size: large; font-weight: bolder;" >Create</a></strong> a project now and take your first step towards precise trigger word detection.</p>
+    </section>
+
+
+
+<br>
+<br>
+<div style="font-size: large; font-weight: bolder;">
+</div>
+{% endblock %}

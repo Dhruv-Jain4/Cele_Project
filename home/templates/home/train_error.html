@@ -1,0 +1,7 @@
+
+
+{% extends 'base_menu.html' %}
+{% load static %}
+{% block content %}
+Please add atleast 5 audio files to Start Training. <a href="{% url 'home:project_detail' pk=proj.id %}">Go back</a>
+{% endblock %}

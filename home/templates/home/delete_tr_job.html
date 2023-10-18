@@ -1,0 +1,33 @@
+{% extends 'base_menu.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<style>
+.new_button {
+    width: 21%;
+    background-color: #2b362b;
+    color: white;
+    padding: 13px 2px;
+    margin-left: 40%;
+    margin-bottom: 0%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+  }
+  .new_button:hover {background-color: black}
+  
+  .new_button:active {
+    background-color: gray; 
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+</style>
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="submit" ><h2>Are you sure you want to delete Training Job <span style="color: yellow;">'{{ name }}'</span>. Logs and model related to this will also be deleted.</h2></label>
+    <input class="new_button" type="submit" name="Delete" id="Delete" value="Delete"></input>
+</form>
+{% endblock %}

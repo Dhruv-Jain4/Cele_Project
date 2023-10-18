@@ -1,0 +1,35 @@
+{% extends "base_menu.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<style>
+.new_button {
+  width: 21%;
+  background-color: #2b362b;
+  color: white;
+  padding: 13px 2px;
+  margin-left: 40%;
+  margin-bottom: 0%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+}
+.new_button:hover {background-color: black}
+
+.new_button:active {
+  background-color: gray; 
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+<p>
+    <form style="margin-top: 0%; margin-left: 30%; width: 500px;" action="" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <input class = "new_button"   type="submit" value="Upload">
+    </form>
+  </p>
+
+{% endblock %}

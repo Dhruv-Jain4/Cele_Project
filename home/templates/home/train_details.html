@@ -1,0 +1,57 @@
+{% extends 'base_menu.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .new_button {
+      width: 21%;
+      background-color: #2b362b;
+      color: white;
+      padding: 13px 2px;
+      margin-left: 39%;
+      margin-bottom: 0%;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+      display: block;
+      font-size: 20px;
+    }
+    .new_button:hover {background-color: black}
+    
+    .new_button:active {
+      background-color: gray; 
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    </style>
+<h2>Go back to <a href="{% url 'home:project_detail' pk=proj.id %}" style="color: yellow;   ">Project Detail</a></h2>
+{% if tj.status|lower == "training" %}
+    <h1><strong style="color: yellow;">{{ tj.status|upper }}</strong></h1>
+{% elif tj.status|lower == "completed" %}
+    <h1><strong style="color: green;">{{ tj.status|upper }}</strong></h1>
+{% else %}
+    <h1><strong style="color: red;">{{ tj.status|upper }}</strong></h1>
+{% endif %}
+
+{{ text|safe }}
+
+
+<div>
+ {% if plot %}
+    <img src="data:image/png;base64,{{ plot }}" / class="blog-image" style="position: relative; height: 500px; margin-left: 0px; width: 49%;">  
+    <img src="data:image/png;base64,{{ plot2 }}" / class="blog-image" style="position: absolute; height: 500px; margin-left: 20px; width: 49%">
+{% endif %}
+</div>
+<br>
+
+
+
+{% if file %}
+    <button class="new_button" onclick="location.href='{% static file %}'" type="submit" >Download Model</button>
+{% endif %}
+
+<br>
+
+<br>
+
+{% endblock %}

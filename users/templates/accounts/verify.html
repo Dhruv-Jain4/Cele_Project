@@ -1,0 +1,10 @@
+{% extends "base_bootstrap.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" name="verify" id="verify" value="Verify">
+</form>
+
+{% endblock %}

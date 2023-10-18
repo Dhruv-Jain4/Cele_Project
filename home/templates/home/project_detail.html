@@ -1,0 +1,164 @@
+
+{% extends "base_menu.html" %}
+
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<style>
+    .audio-player {
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .player-controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
+    button.play {
+        width: 50px;
+        height: 50px;
+        background-image: url('static/play.jpg');
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        /*background-image: url('play.jpg');*/
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .progress-bar {
+        flex-grow: 1;
+        height: 7px;
+        background-color: #dff801;
+        position: relative;
+        margin: 0 10px;
+    }
+    
+    #progress {
+        height: 100%;
+        width: 0;
+        background-color: #ff0d0d;
+    }
+    
+    .time {
+        font-size: 12px;
+    }
+    #audio {
+        text-align: center;
+    }
+    .audio-widget {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .audio-widget audio {
+            margin-right: 10px; /* Adjust the margin to control the space between audio and text */
+        }
+        td {
+  border-right: solid 1px black; 
+  border-left: solid 1px black;
+}
+th {
+  border-right: solid 1px black; 
+  border-left: solid 1x black;
+  background-color: lightskyblue;
+}
+</style>
+<span style="font-size: larger;">Project Name : <strong> {{ project.name }}</strong></span>
+
+<br>
+<br>
+<strong style="font-size: large;"> Data in this project </strong>
+
+<table class="table" style="background-color: white; width: 95%; border: black;">
+    <tr>
+        <th>Sno</th>
+        <th>Name</th>
+        <th>Audio</th>
+        <th></th>
+    </tr>
+ {% if project.activatedata_set.all %}
+    {% for data in project.activatedata_set.all %}
+    
+        <tr>
+
+            <td width="20px">
+                {{ data.id }}
+            </td>
+            <td width="400px">
+                {{ data.file.name|slice:"7:" }}
+            </td>
+            
+            <td width="700px">
+                <audio id="audio-element" controls style="width: 75%; height: 20px;">
+                    {% with file_name=data.file.name|slice:"7:"  %}
+                        <source src="{% static file_name %}" type="audio/wav">
+                    {% endwith %}
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td width="30px">
+                <a href="{% url 'home:delete_audio' pk=project.id pk2=data.id %}"><i class="fa fa-trash-o" style="color: #ff0d0d;"></i></a>
+            </td>
+        
+            
+    </tr>
+        
+
+
+    {% endfor %}
+ {% endif %}
+
+
+</table>
+<br>
+
+<a href="{% url 'home:upload_audio' pk=project.id %}" style="color: yellow; font-size: x-large;"><strong>Add Data</strong> || </a>
+<a href="{% url 'home:record_audio' pk=project.id %}" style="color: yellow; font-size: x-large;"><strong>Record Audio</strong></a>
+<br>
+<h2 style="font-weight: bolder;">Your Training Jobs</h2>
+<table style="background-color: white;" class="table">
+    <tr>
+    <th>Sno.</th>
+    <th>Name</th>
+    <th>Status</th>
+    <th></th>
+  </tr>
+    {% if project.trainingjob_set.all %}
+    {% for tj in project.trainingjob_set.all %}
+
+    
+        
+        <tr>
+          <td>{{ tj.id }}</td>
+          <td><a href="{% url 'home:train_detail' pk=project.id pk2=tj.id %} ">{{ tj.name }}</a></td>
+          <td>
+            {% if tj.status|lower == "training" %}
+                <span style="color: darkgoldenrod;">{{ tj.status|upper }}</span>
+            {% elif tj.status|lower == "completed" %}
+                <span style="color: green;">{{ tj.status|upper }}</span>
+            {% else %}
+                <span style="color: red;">{{ tj.status|upper }}</span>
+            {% endif %}
+        </td>
+        <td><a href="{% url 'home:train_delete' pk=project.id pk2=tj.id %}"><i class="fa fa-trash-o" style="color: #ff0d0d;"></i></a></td>
+        </tr>
+      
+        <!-- <a href="{% url 'home:train_detail' pk=project.id pk2=tj.id %} ">{{ tj.name }}</a> -->
+    
+    {% endfor %}
+{% endif %}
+</table>
+
+
+<a href="{% url 'home:train' pk=project.id %}"><strong style="color: yellow; font-size: x-large;">Start New Training Job</strong></a>
+
+
+{% endblock %}

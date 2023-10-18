@@ -1,0 +1,6 @@
+
+{% extends 'base_menu.html' %}
+{% load static %}
+{% block content %}
+Only wav files are supported. <a href="{% url 'home:project_detail' pk=id %}">Go back</a>
+{% endblock %}

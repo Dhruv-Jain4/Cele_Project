@@ -1,0 +1,1771 @@
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\autoreload.py - 266 - 2023-10-09 23:30:37,297 — django.utils.autoreload — INFO — trigger_reload:266 — D:\projrct sem-9 (2)\projrct sem-9\celeproject\celeproject\settings.py changed, reloading.)
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\autoreload.py - 266 - 2023-10-09 23:39:24,789 — django.utils.autoreload — INFO — trigger_reload:266 — D:\projrct sem-9 (2)\projrct sem-9\celeproject\home\tasks.py changed, reloading.)
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\autoreload.py - 266 - 2023-10-09 23:40:55,014 — django.utils.autoreload — INFO — trigger_reload:266 — D:\projrct sem-9 (2)\projrct sem-9\celeproject\home\views.py changed, reloading.)
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:41:22,400 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'crispy_forms_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'crispy_forms_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:41:23,269 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'crispy_forms_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'crispy_forms_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:41:23,391 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'crispy_forms_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'crispy_forms_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\autoreload.py - 266 - 2023-10-09 23:41:52,056 — django.utils.autoreload — INFO — trigger_reload:266 — D:\projrct sem-9 (2)\projrct sem-9\celeproject\celeproject\settings.py changed, reloading.)
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\autoreload.py - 266 - 2023-10-09 23:42:09,687 — django.utils.autoreload — INFO — trigger_reload:266 — D:\projrct sem-9 (2)\projrct sem-9\celeproject\celeproject\settings.py changed, reloading.)
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:43:48,456 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:43:50,436 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:43:50,616 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\autoreload.py - 266 - 2023-10-09 23:44:03,349 — django.utils.autoreload — INFO — trigger_reload:266 — D:\projrct sem-9 (2)\projrct sem-9\celeproject\celeproject\settings.py changed, reloading.)
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:06,796 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:06,971 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:08,099 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:08,259 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:09,215 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:12,432 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:12,715 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:13,811 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:14,408 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:14,790 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:14,935 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:15,366 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:15,506 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:15,945 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:16,256 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:16,335 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:16,448 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:16,719 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:16,918 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:17,338 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/verify/)
+Traceback (most recent call last):
+  File "D:\projrct sem-9 (2)\projrct sem-9\celeproject\users\views.py", line 80, in get
+    mail = request.session["mail"]
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+KeyError: 'mail'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\projrct sem-9 (2)\projrct sem-9\celeproject\users\views.py", line 82, in get
+    return HttpResponse("401 Unauthorized", status_code = 401)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\http\response.py", line 371, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'status_code'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:17,452 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:17,539 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/register/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\projrct sem-9 (2)\projrct sem-9\celeproject\users\views.py", line 72, in get
+    return render(request, os.path.join("accounts", "register.html"),context=context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:17,660 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/register/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\projrct sem-9 (2)\projrct sem-9\celeproject\users\views.py", line 72, in get
+    return render(request, os.path.join("accounts", "register.html"),context=context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:18,018 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/register/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\projrct sem-9 (2)\projrct sem-9\celeproject\users\views.py", line 72, in get
+    return render(request, os.path.join("accounts", "register.html"),context=context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:21,931 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\log.py - 241 - 2023-10-09 23:44:22,065 — django.request — ERROR — log_response:241 — Internal Server Error: /accounts/login/)
+Traceback (most recent call last):
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 49, in as_crispy_form
+    "field_template": "%s/field.html" % template_pack,
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\pawan\anaconda3\lib\site-packages\crispy_forms\utils.py", line 16, in get_template_pack
+    return getattr(settings, "CRISPY_TEMPLATE_PACK")
+  File "C:\Users\pawan\anaconda3\lib\site-packages\django\conf\__init__.py", line 94, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'CRISPY_TEMPLATE_PACK'
+D:\projrct sem-9 (2)\projrct sem-9\celeproject\users\forms.py - 20 - 2023-10-09 23:46:50,113 — users.forms — INFO — user_exists:20 — User with given details does not exist {'email': 'user1@gmail.com'})
+D:\projrct sem-9 (2)\projrct sem-9\celeproject\users\forms.py - 20 - 2023-10-09 23:46:50,113 — users.forms — INFO — user_exists:20 — User with given details does not exist {'username': 'newuser1'})
+D:\projrct sem-9 (2)\projrct sem-9\celeproject\users\views.py - 41 - 2023-10-09 23:46:54,397 — users.views — INFO — post:41 — Unable to send mail due to the error )
+D:\projrct sem-9 (2)\projrct sem-9\celeproject\users\views.py - 41 - 2023-10-09 23:47:33,023 — users.views — INFO — post:41 — Unable to send mail due to the error )
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\autoreload.py - 266 - 2023-10-09 23:50:22,367 — django.utils.autoreload — INFO — trigger_reload:266 — D:\projrct sem-9 (2)\projrct sem-9\celeproject\celeproject\settings.py changed, reloading.)
+C:\Users\pawan\anaconda3\lib\site-packages\django\utils\autoreload.py - 266 - 2023-10-09 23:51:29,290 — django.utils.autoreload — INFO — trigger_reload:266 — D:\projrct sem-9 (2)\projrct sem-9\celeproject\celeproject\settings.py changed, reloading.)
